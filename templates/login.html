@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Placement Predictor</title>
+    <style>
+    div {
+    text-align:center;
+    }
+    </style>
+</head>
+</head>
+<body bgcolor="pink">
+<div>
+{%if message%}
+<p style="color:green">{{message}}</p>
+{%endif%}
+
+<form action="/perform_login" method="post">
+    <h1>Iris Flower Predictor</h1>
+    <h2>Enter Your Login Details</h2>
+    <label>Email :</label><br>
+    <input type="email" name="Email"> <br><br>
+    <label> Password :</label><br>
+    <input type="password" name="Password"> <br><br>
+    <input type="Submit" value="Login">
+
+    <p>Not a member.<a href="/register">Register</a></p>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict Iris Flower Species</title>
+    <style>
+    div {text-align: center;}
+    </style>
+</head>
+<body bgcolor="pink">
+<div>
+    <form action="/predict_Iris" method="post">
+        <h1>Iris Flower Predictor</h1>
+    <h2 style="color:green"> Enter the values of Iris Flower's <br>
+        Sepal Length, Sepal Width, Petal Length and Petal Width</h2>
+
+    <label>Sepal Length :</label><br>
+    <input type="text" name="sl"> <br><br>
+        <label>Sepal Width :</label><br>
+    <input type="text" name="sw"> <br><br>
+        <label>Petal Length :</label><br>
+    <input type="text" name="pl"> <br><br>
+        <label>Petal Width :</label><br>
+    <input type="text" name="pw"> <br><br>
+
+
+
+    {%if message%}
+    <h2 style="color:red">{{message}}</h2>
+    {%endif%}
+    <br><br>
+    <input type="Submit" value="Predict Iris Flower Specie">
+    </form>
+
+
+</div>
+</body>
+</html>
